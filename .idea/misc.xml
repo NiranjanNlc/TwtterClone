@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/btn_round_blue.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/heart.xml" value="0.18229166666666666" />
+        <entry key="app/src/main/res/drawable/ic_close.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/image_profile.xml" value="0.1921875" />
+        <entry key="app/src/main/res/layout/activity_compose_tweet_actvity.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.19322916666666667" />
       </map>
