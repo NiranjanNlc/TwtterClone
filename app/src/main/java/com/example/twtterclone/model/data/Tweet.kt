@@ -7,10 +7,10 @@ import androidx.room.PrimaryKey
 data class Tweet
     (
     @PrimaryKey(autoGenerate= true)
-     var statusid: String,
-     var userId: String,
-     var message: String,
-     var retwtCount: String,
-     var likeCount: String,
-     var creatTime: Long
+     val statusid: String,
+     val userId: String,
+     val message: String,
+     val retwtCount: String,
+     val likeCount: String,
+     val creatTime: Long
             )

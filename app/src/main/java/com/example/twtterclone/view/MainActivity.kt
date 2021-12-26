@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity()
 {
     private lateinit var binding : ActivityMainBinding;
     private lateinit var timeLineViewModal: TimeLineViewModal
+    private lateinit var adapter: TweetAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= DataBindingUtil.setContentView(this,R.layout.activity_main)
@@ -22,5 +23,7 @@ class MainActivity : AppCompatActivity()
             val intent = Intent(this, ComposeTweetActvity::class.java)
             startActivity(intent)
         }
+        adapter = TweetAdapter()
+        binding.recyclerview.adapter = adapter
     }
 }
