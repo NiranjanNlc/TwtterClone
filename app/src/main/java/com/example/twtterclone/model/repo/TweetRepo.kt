@@ -5,7 +5,7 @@ import androidx.lifecycle.LiveData
 import com.example.twtterclone.model.dao.TweetDao
 import com.example.twtterclone.model.data.Tweet
 
-class TweetRepo(private val tweetDao: TweetDao) {
+class TweetRepo(private val tweetDao:TweetDao,) {
 
     val allTweets: LiveData<List<Tweet>> = tweetDao.getAlphabetizedWords()
 
