@@ -30,8 +30,7 @@ abstract class TweetDb : RoomDatabase() {
                         // Delete all content here.
                         //  tweetDao.deleteAll()
                         // Add sample tweets.
-                        addTweets(tweetDao)
-
+                       // addTweets(tweetDao)
                     }
                 }
             }

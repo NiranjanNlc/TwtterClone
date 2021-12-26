@@ -5,13 +5,12 @@ import androidx.room.PrimaryKey
 import java.util.*
 
 @Entity
-data class Tweet
-    (
+data class Tweet(
     @PrimaryKey(autoGenerate= true)
-     val statusid: String,
-     val userId: String,
-     val message: String,
-     val retwtCount: String,
-     val likeCount: String,
-     val creatTime: Date
+    val statusid: Long=0,
+    val userId: String,
+    val message: String,
+    val retwtCount: Int,
+    val likeCount: Int,
+    val creatTime: Date
             )
