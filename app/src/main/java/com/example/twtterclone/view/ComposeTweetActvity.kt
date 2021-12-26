@@ -7,7 +7,6 @@ import android.view.View
 import androidx.databinding.DataBindingUtil
 import com.example.twtterclone.R
 import com.example.twtterclone.databinding.ActivityComposeTweetActvityBinding
-import com.example.twtterclone.databinding.ActivityMainBinding
 import android.widget.Toast
 
 
@@ -21,7 +20,7 @@ class ComposeTweetActvity : AppCompatActivity()
         binding = DataBindingUtil.setContentView(this,R.layout.activity_compose_tweet_actvity)
         binding.toolbar.setNavigationOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
-                val intent = Intent(this@ComposeTweetActvity,MainActivity::class.java)
+                val intent = Intent(this@ComposeTweetActvity,TimeLineActivity::class.java)
                 startActivity(intent)
                 Toast.makeText(applicationContext, "your icon was clicked", Toast.LENGTH_SHORT)
                     .show()

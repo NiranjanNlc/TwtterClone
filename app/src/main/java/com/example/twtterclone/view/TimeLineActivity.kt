@@ -10,7 +10,7 @@ import com.example.twtterclone.util.RepoUtl
 import com.example.twtterclone.viewModal.TimeLineViewModal
 import com.example.twtterclone.viewModal.ViewModalFactory
 
-class MainActivity : AppCompatActivity()
+class TimeLineActivity : AppCompatActivity()
 {
     private lateinit var binding : ActivityMainBinding;
     private lateinit var timeLineViewModal: TimeLineViewModal
