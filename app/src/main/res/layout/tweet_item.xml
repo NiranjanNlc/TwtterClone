@@ -18,8 +18,7 @@
             android:layout_height="96dp"
             android:layout_marginEnd="20dp"
             android:src="@drawable/twitter_person"
-            app:placeholderImage="@drawable/egg"
-            app:roundAsCircle="true" />
+            />
 
         <TextView
             android:id="@+id/tv_name"
@@ -124,6 +123,5 @@
                 android:textSize="24dp"
                 android:textStyle="normal" />
         </LinearLayout>
-
     </RelativeLayout>
 </layout>

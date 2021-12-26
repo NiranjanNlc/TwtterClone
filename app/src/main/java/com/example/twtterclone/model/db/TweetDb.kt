@@ -7,11 +7,12 @@ import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import com.example.twtterclone.model.dao.TweetDao
 import com.example.twtterclone.model.data.Tweet
+import com.example.twtterclone.model.data.User
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
 
-@Database(entities = [Tweet::class], version = 1)
+@Database(entities = [Tweet::class, User::class] , version = 1)
 abstract class TweetDb : RoomDatabase() {
         abstract fun tweetdDao(): TweetDao
         private class TweetsDatabaseCallback(

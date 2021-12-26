@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/btn_round_blue.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/heart.xml" value="0.18229166666666666" />
         <entry key="app/src/main/res/drawable/ic_close.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_twitter_comment.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_twitter_retweet.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/image_profile.xml" value="0.1921875" />
         <entry key="app/src/main/res/layout/activity_compose_tweet_actvity.xml" value="0.1" />

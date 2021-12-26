@@ -4,10 +4,12 @@ import androidx.annotation.WorkerThread
 import androidx.lifecycle.LiveData
 import com.example.twtterclone.model.dao.TweetDao
 import com.example.twtterclone.model.data.Tweet
+import com.example.twtterclone.model.data.User
 
 class TweetRepo(private val tweetDao:TweetDao,) {
 
-    val allTweets: LiveData<List<Tweet>> = tweetDao.getAlphabetizedWords()
+    val allTweets: LiveData<List<Tweet>> = tweetDao.getAlphabetizedTweets()
+    val allUser: LiveData<List<User>> = tweetDao.getAlphabetizedWords()
 
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
@@ -15,5 +17,12 @@ class TweetRepo(private val tweetDao:TweetDao,) {
         println(" inserted the tweet  ")
         tweetDao.save(tweet)
         println(allTweets.getValue())
+    }
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
+    suspend fun insert(user: User) {
+        println(" inserted the user ")
+        tweetDao.save(user)
+        println(allUser.getValue())
     }
 }
