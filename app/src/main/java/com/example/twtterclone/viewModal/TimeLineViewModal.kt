@@ -1,11 +1,13 @@
 package com.example.twtterclone.viewModal
 
-class TimeLineViewModal
+import androidx.lifecycle.ViewModel
+import com.example.twtterclone.model.repo.TweetRepo
+
+class TimeLineViewModal(private val repository: TweetRepo) : ViewModel()
 {
 
     init
     {
-
     }
 
 }
