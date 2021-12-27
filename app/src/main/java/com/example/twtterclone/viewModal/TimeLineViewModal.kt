@@ -6,6 +6,7 @@ import com.example.twtterclone.model.repo.TweetRepo
 class TimeLineViewModal(private val repository: TweetRepo) : ViewModel()
 {
 
+    val tweets = repository.allTweets
     init
     {
     }

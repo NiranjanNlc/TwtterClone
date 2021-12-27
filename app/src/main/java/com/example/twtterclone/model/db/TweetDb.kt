@@ -10,6 +10,7 @@ import com.example.twtterclone.model.dao.TweetDao
 import com.example.twtterclone.model.data.Converter
 import com.example.twtterclone.model.data.Tweet
 import com.example.twtterclone.model.data.User
+import com.example.twtterclone.util.SampleTweet
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -30,14 +31,15 @@ abstract class TweetDb : RoomDatabase() {
                         // Delete all content here.
                         //  tweetDao.deleteAll()
                         // Add sample tweets.
-                       // addTweets(tweetDao)
+                       addTweets(tweetDao)
                     }
                 }
             }
-            private fun addTweets(tweetDao: TweetDao) {
-//                var tweet = Tweets(name = "Hello")
-//                tweetDao.save(tweet)
-//                println(tweet.toString())
+            private fun addTweets(tweetDao: TweetDao)
+            {
+             SampleTweet.getTweetList().forEach {
+                 tweetDao.save(it)
+             }
             }
         }
         companion object {

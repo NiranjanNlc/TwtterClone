@@ -1,10 +1,14 @@
 package com.example.twtterclone.model.data
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import java.util.*
 
+@Entity
 data class User
     (
-    var userId : String,
+    @PrimaryKey(autoGenerate = true)
+    var userId : Long,
     var noOfFollower: Int,
     var noOfFollowing :Int,
     var bio: String,

@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.twtterclone.R
 import com.example.twtterclone.databinding.ActivityMainBinding
 import com.example.twtterclone.util.RepoUtl
@@ -25,5 +27,11 @@ class TimeLineActivity : AppCompatActivity()
         }
         adapter = TweetAdapter()
         binding.recyclerview.adapter = adapter
+        binding.recyclerview.layoutManager= LinearLayoutManager(this)
+        timeLineViewModal.tweets.observe(this,
+            {
+                println(it.toString())
+                adapter.submitList(it)
+            })
     }
 }

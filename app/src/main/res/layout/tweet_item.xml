@@ -9,7 +9,8 @@
     <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:padding="20dp"
+        android:padding="0dp"
+        android:layout_margin="16dp"
         android:layout_height="wrap_content">
 
         <ImageView
@@ -46,7 +47,7 @@
             android:layout_below="@id/tv_name"
             android:layout_marginTop="5dp"
             android:layout_toEndOf="@id/profile_photo"
-            android:text="THIS IS A TWEET"
+            android:text="@{tweet.message}"
             android:textSize="15sp"
             android:textStyle="normal" />
 
@@ -67,58 +68,59 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_tweet_text"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="25dp"
-            android:layout_toRightOf="@id/profile_photo">
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/profile_photo"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/tweet_action_reply"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
                 android:src="@drawable/ic_twitter_comment" />
 
             <TextView
                 android:id="@+id/commentCount"
-                android:layout_width="27dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
                 android:layout_toEndOf="@id/tv_name"
+                android:layout_weight="2"
                 android:text="0"
                 android:textSize="24dp"
                 android:textStyle="normal" />
 
             <ImageView
                 android:id="@+id/tweet_action_retweet"
-                android:layout_width="32dp"
+                android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_marginStart="45dp"
                 android:layout_toEndOf="@id/tweet_action_reply"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:src="@drawable/ic_twitter_retweet" />
+
             <TextView
                 android:id="@+id/retweetCount"
-                android:layout_width="27dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
                 android:layout_toEndOf="@id/tv_name"
+                android:layout_weight="2"
                 android:text="0"
                 android:textSize="24dp"
                 android:textStyle="normal" />
 
             <ImageView
                 android:id="@+id/tweet_action_like"
-                android:layout_width="32dp"
+                android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_marginStart="45dp"
                 android:layout_toEndOf="@id/tweet_action_retweet"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:src="@drawable/heart" />
+
             <TextView
                 android:id="@+id/lkeCount"
-                android:layout_width="27dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
                 android:layout_toEndOf="@id/tv_name"
+                android:layout_weight="2"
                 android:text="0"
                 android:textSize="24dp"
                 android:textStyle="normal" />

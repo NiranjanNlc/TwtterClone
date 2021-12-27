@@ -34,7 +34,7 @@ class TweetAdapter: ListAdapter<Tweet, TweetAdapter.TweetViewHolder>(TWEET_COMPA
     }
     override fun onBindViewHolder(holder: TweetViewHolder, position: Int)
     {
-        println("On view bind"+getItem(position+1).message)
+        println("On view bind"+getItem(position).message)
         holder.binding.tweet = getItem(position)
         holder.binding.executePendingBindings()
     }
