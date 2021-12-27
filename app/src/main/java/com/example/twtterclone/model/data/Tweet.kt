@@ -10,7 +10,7 @@ data class Tweet(
     val statusid: Long=0,
     val userId: String,
     val message: String,
-    val retwtCount: Int,
-    val likeCount: Int,
+    var retwtCount: Int,
+    var likeCount: Int,
     val creatTime: Date
             )

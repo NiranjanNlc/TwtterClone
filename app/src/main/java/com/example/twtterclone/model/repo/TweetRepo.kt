@@ -25,4 +25,10 @@ class TweetRepo(private val tweetDao:TweetDao,) {
         tweetDao.save(user)
         println(allUser.getValue())
     }
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
+    suspend fun update(tweet: Tweet)
+    {
+      tweetDao.update(tweet)
+    }
 }
