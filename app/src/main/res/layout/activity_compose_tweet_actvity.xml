@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
+    <data>
+        <variable
+            name="tweet"
+            type="com.example.twtterclone.model.data.Tweet" />
+        <variable
+            name="viewmodel"
+            type="com.example.twtterclone.viewModal.TweetViewModal" />
+    </data>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -26,6 +34,7 @@
             android:paddingRight="20dp"
             android:text="Tweet"
             android:textAllCaps="false"
+            android:onClick="@{viewmodel.insertTweet(tweet)}"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -55,12 +64,12 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/drawee_user_photo"
             android:background="@android:color/transparent"
+            android:text="@{tweet.message}"
             android:hint="What's happening"
             android:minHeight="48dp"
             android:lines="6"
             android:singleLine="false"
             android:textSize="16sp" />
-
     </RelativeLayout>
 
 </RelativeLayout>
