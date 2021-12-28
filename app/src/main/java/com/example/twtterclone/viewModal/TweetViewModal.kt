@@ -3,13 +3,12 @@ package com.example.twtterclone.viewModal
 import androidx.lifecycle.ViewModel
 import com.example.twtterclone.model.data.Tweet
 import com.example.twtterclone.model.repo.TweetRepo
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.launch
+import com.example.twtterclone.util.SampleTweet
+import kotlinx.coroutines.*
 
 class TweetViewModal (private val repository: TweetRepo) : ViewModel()
 {
+    var tweetmessage = String()
     private val parentJob = Job()
     private val coroutineScope = CoroutineScope(Dispatchers.Main + parentJob)
     init
@@ -17,11 +16,13 @@ class TweetViewModal (private val repository: TweetRepo) : ViewModel()
 
     }
 
-    fun insertTweet(tweet: Tweet)
+    fun insertTweet()
     {
-        coroutineScope.launch {
+        val tweet = SampleTweet.getTweet(tweetmessage)
+        runBlocking{
             repository.insert(tweet)
         }
+        tweetmessage = ""
     }
 
 }

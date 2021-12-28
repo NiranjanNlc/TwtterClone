@@ -34,7 +34,7 @@
             android:paddingRight="20dp"
             android:text="Tweet"
             android:textAllCaps="false"
-            android:onClick="@{viewmodel.insertTweet(tweet)}"
+            android:onClick="@{()->viewmodel.insertTweet()}"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/drawee_user_photo"
             android:background="@android:color/transparent"
-            android:text="@{tweet.message}"
+            android:text="@={viewmodel.tweetmessage}"
             android:hint="What's happening"
             android:minHeight="48dp"
             android:lines="6"
