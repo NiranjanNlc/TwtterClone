@@ -21,15 +21,31 @@ class ComposeTweetActvity : AppCompatActivity()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_compose_tweet_actvity)
+        viewmodel = ViewModalFactory(RepoUtl.getRepo(this)).create(TweetViewModal::class.java)
+        binding.viewmodel = viewmodel
+        println(" composing the tweet ..............")
         binding.toolbar.setNavigationOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
-                val intent = Intent(this@ComposeTweetActvity,TimeLineActivity::class.java)
-                startActivity(intent)
-                Toast.makeText(applicationContext, "your icon was clicked", Toast.LENGTH_SHORT)
-                    .show()
+                startHomeActivity()
             }
         })
-        viewmodel = ViewModalFactory(RepoUtl.getRepo(this)).create(TweetViewModal::class.java)
+        binding.btnTweet.setOnClickListener {
+            viewmodel.insertTweet()
+        }
+        viewmodel.tweetmessage.observe(this,
+            {
+                if (it.equals("nepal3e4"))
+                {
+                    startHomeActivity()
+                }
+            })
 
+    }
+
+    private fun startHomeActivity() {
+        val intent = Intent(this@ComposeTweetActvity, TimeLineActivity::class.java)
+        startActivity(intent)
+        Toast.makeText(applicationContext, "your icon was clicked", Toast.LENGTH_SHORT)
+            .show()
     }
 }

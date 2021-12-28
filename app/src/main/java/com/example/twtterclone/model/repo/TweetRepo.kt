@@ -16,13 +16,13 @@ class TweetRepo(private val tweetDao:TweetDao,) {
     suspend fun insert(tweet: Tweet) {
         println(" inserted the tweet  ")
         tweetDao.save(tweet)
-        println(allTweets.getValue())
+        println(" titter " + allTweets.getValue())
     }
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
     suspend fun insert(user: User) {
         println(" inserted the user ")
-        tweetDao.save(user)
+        tweetDao.saveUser(user)
         println(allUser.getValue())
     }
     @Suppress("RedundantSuspendModifier")

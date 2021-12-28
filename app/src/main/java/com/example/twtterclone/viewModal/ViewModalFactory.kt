@@ -13,6 +13,11 @@ class ViewModalFactory(private val repository: TweetRepo) :
             @Suppress("UNCHECKED_CAST")
             return TimeLineViewModal(repository) as T
         }
+        else if  (modelClass.isAssignableFrom(TweetViewModal::class.java)) {
+            println("Assighnabke class")
+            @Suppress("UNCHECKED_CAST")
+            return TweetViewModal(repository) as T
+        }
         throw IllegalArgumentException("Unknown ViewModel class")
     }
 }

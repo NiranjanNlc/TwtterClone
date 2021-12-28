@@ -2,9 +2,6 @@
 <layout>
     <data>
         <variable
-            name="tweet"
-            type="com.example.twtterclone.model.data.Tweet" />
-        <variable
             name="viewmodel"
             type="com.example.twtterclone.viewModal.TweetViewModal" />
     </data>
@@ -71,6 +68,5 @@
             android:singleLine="false"
             android:textSize="16sp" />
     </RelativeLayout>
-
 </RelativeLayout>
 </layout>

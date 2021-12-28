@@ -22,7 +22,7 @@ interface TweetDao
     fun getAlphabetizedTweets(): LiveData<List<Tweet>>
 
     @Insert(onConflict = REPLACE)
-    fun save(user: User)
+    fun saveUser(user: User)
 
     @Update
     fun update(user: User)
