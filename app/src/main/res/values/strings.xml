@@ -2,4 +2,9 @@
     <string name="app_name">TwtterClone</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_create_your_account">SighnUp</string>
+    <string name="str_name">Your Name</string>
+    <string name="str_username">UserName</string>
+    <string name="str_password">password</string>
+    <string name="str_create">Create account</string>
 </resources>

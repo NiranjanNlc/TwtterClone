@@ -9,8 +9,10 @@
         <entry key="app/src/main/res/drawable/ic_twitter_comment.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_twitter_retweet.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/image_profile.xml" value="0.1921875" />
+        <entry key="app/src/main/res/drawable/layout_top_line_only.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_compose_tweet_actvity.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/sighn_up_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/tweet_item.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.19322916666666667" />
       </map>
