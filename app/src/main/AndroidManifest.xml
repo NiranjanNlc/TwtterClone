@@ -10,12 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TwtterClone">
         <activity
+            android:name=".view.Authenciation"
+            android:exported="true" />
+        <activity
             android:name=".view.SplashActivity"
             android:exported="true" />
         <activity
             android:name=".view.ComposeTweetActvity"
             android:exported="true"
-            android:theme="@style/NoActionBar"></activity>
+            android:theme="@style/NoActionBar" />
         <activity
             android:name=".view.TimeLineActivity"
             android:exported="true"
