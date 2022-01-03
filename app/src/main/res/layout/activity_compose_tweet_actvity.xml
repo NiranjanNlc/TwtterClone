@@ -51,9 +51,8 @@
             android:layout_gravity="left"
             android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/twitter_person"
             android:background="@drawable/image_profile"
-            />
+            android:src="@drawable/twitter_person" />
 
         <EditText
             android:id="@+id/et_tweet_text"
@@ -61,11 +60,10 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/drawee_user_photo"
             android:background="@android:color/transparent"
-            android:text="@={viewmodel.tweetmessage}"
             android:hint="What's happening"
-            android:minHeight="48dp"
             android:lines="6"
             android:singleLine="false"
+            android:text="@={viewmodel.tweetmessage}"
             android:textSize="16sp" />
     </RelativeLayout>
 </RelativeLayout>
