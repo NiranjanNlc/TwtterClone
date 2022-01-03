@@ -15,7 +15,13 @@ class TweetRepo(private val tweetDao:TweetDao,) {
     @WorkerThread
     suspend fun insert(tweet: Tweet) {
         println(" inserted the tweet  ")
-        tweetDao.save(tweet)
+        try {
+            tweetDao.save(tweet)
+        }
+        catch (e:Exception)
+        {
+            println(" eroot to the saving twet "+ e.message)
+        }
         println(" titter " + allTweets.getValue())
     }
     @Suppress("RedundantSuspendModifier")
