@@ -5,10 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.twtterclone.R
 import com.example.twtterclone.databinding.ActivityMainBinding
 import com.example.twtterclone.util.RepoUtl
+import com.example.twtterclone.view.adapter.TweetAdapter
 import com.example.twtterclone.viewModal.TimeLineViewModal
 import com.example.twtterclone.viewModal.ViewModalFactory
 

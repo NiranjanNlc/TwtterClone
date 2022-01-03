@@ -1,4 +1,4 @@
-package com.example.twtterclone.view
+package com.example.twtterclone.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
