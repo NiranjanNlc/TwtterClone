@@ -12,6 +12,7 @@
         <entry key="app/src/main/res/drawable/layout_top_line_only.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_compose_tweet_actvity.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/sighn_up_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/tweet_item.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.19322916666666667" />

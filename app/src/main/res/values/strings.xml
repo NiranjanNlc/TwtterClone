@@ -7,4 +7,6 @@
     <string name="str_username">UserName</string>
     <string name="str_password">password</string>
     <string name="str_create">Create account</string>
+    <string name="str_log_in_to_twitter">Login In</string>
+    <string name="str_log_in">LogIn</string>
 </resources>
