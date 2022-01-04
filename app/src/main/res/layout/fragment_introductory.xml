@@ -8,21 +8,18 @@
      <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="?backgroundColor"
-        tools:context=".IntroActivity">
-
+       >
          <androidx.appcompat.widget.Toolbar
              android:id="@+id/toolbar"
              android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:background="?backgroundColor">
+             android:layout_height="wrap_content" >
 
              <ImageView
                  android:layout_width="25dp"
                  android:layout_height="25dp"
                  android:layout_gravity="center"
                  android:src="@drawable/img"
-                 app:tint="@color/purple_700" />
+                  />
 
          </androidx.appcompat.widget.Toolbar>
 
