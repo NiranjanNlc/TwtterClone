@@ -6,15 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.twtterclone.R
+import com.example.twtterclone.databinding.FragmentIntroductoryBinding
+import com.example.twtterclone.databinding.SighnUpFragmentBinding
 
 class SighnUpFragment : Fragment() {
 
+    private lateinit var binding: SighnUpFragmentBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View
     {
-        return inflater.inflate(R.layout.sighn_up_fragment, container, false)
+        // Inflate the layout for this fragment
+        binding = SighnUpFragmentBinding.inflate(layoutInflater,container,false)
+        return binding.root
     }
 
 
