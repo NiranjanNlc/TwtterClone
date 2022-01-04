@@ -9,26 +9,25 @@
     tools:context=".view.Authenciation">
 
     <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
         android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_gravity="center"
-            app:tint="@color/teal_700" />
+            android:src="@drawable/img" />
 
         <TextView
+            android:id="@+id/tv_sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginEnd="30dp"
-            android:id="@+id/tv_sign_up"
+            android:text="Sign up"
             android:textColor="@color/purple_700"
-            android:textStyle="bold"
-            android:text="Sign up"/>
+            android:textStyle="bold" />
 
     </androidx.appcompat.widget.Toolbar>
 
