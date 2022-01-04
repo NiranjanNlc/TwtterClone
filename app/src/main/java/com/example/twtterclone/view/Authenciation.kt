@@ -15,12 +15,12 @@ class Authenciation : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.authenciation_activity)
-        if (savedInstanceState == null) {
-            supportFragmentManager.commit {
-                setReorderingAllowed(true)
-                add<IntroductoryFragment>(R.id.container)
-            }
-        }
+//        if (savedInstanceState == null) {
+//            supportFragmentManager.commit {
+//                setReorderingAllowed(true)
+//                add<IntroductoryFragment>(R.id.container)
+//            }
+//        }
     }
 
 

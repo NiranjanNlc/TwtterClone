@@ -3,7 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'com.google.gms.google-services'// Google Play services Gradle plugin
     id 'kotlin-kapt'
-
+    id 'androidx.navigation.safeargs'
 }
 
 android {
@@ -66,4 +66,8 @@ dependencies {
     implementation "androidx.fragment:fragment-ktx:$fragment_version"
     // Testing Fragments in Isolation
     debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
+    // navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+
 }
