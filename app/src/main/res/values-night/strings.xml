@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="str_create_your_account">SighnUp</string>
+    <string name="str_intro_text">See What Hapening Around You</string>
+    <string name="str_have_account">Already have Account</string>
 </resources>

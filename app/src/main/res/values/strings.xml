@@ -9,4 +9,6 @@
     <string name="str_create">Create account</string>
     <string name="str_log_in_to_twitter">Login In</string>
     <string name="str_log_in">LogIn</string>
+    <string name="str_intro_text">See What Hapening Around You</string>
+    <string name="str_have_account">Already have Account</string>
 </resources>
