@@ -17,7 +17,7 @@ class SplashActivity : AppCompatActivity()
         }
         else
         {
-
+            startAuthActivity()
         }
     }
 
@@ -30,5 +30,10 @@ class SplashActivity : AppCompatActivity()
         startActivity(intent)
         Toast.makeText(applicationContext, "your icon was clicked", Toast.LENGTH_SHORT)
             .show()
-    }
+    }private fun startAuthActivity() {
+    val intent = Intent(this, Authenciation::class.java)
+    startActivity(intent)
+    Toast.makeText(applicationContext, "your icon was clicked", Toast.LENGTH_SHORT)
+        .show()
+}
 }
