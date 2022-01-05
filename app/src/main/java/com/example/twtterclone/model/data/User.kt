@@ -9,6 +9,9 @@ data class User
     (
     @PrimaryKey(autoGenerate = true)
     var userId : Long,
+    var name: String,
+    var userName : String,
+    var password: String,
     var noOfFollower: Int,
     var noOfFollowing :Int,
     var bio: String,

@@ -22,6 +22,34 @@ class SighnUpFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.btnCreate.setOnClickListener {
+            if(checkAllFieldNonEmpty() && checkPasswordMatch())
+            {
 
+            }
+            else
+            {
+                displayErrorMessage()
+            }
+        }
+    }
 
+    private fun displayErrorMessage() {
+        TODO("Not yet implemented")
+    }
+
+    private fun checkPasswordMatch(): Boolean
+    {
+       if(binding.confirmPassword.text.equals(binding.etPassword.text))
+           return true
+        else
+            return false
+    }
+
+    private fun checkAllFieldNonEmpty(): Boolean
+    {
+        return true
+    }
 }
