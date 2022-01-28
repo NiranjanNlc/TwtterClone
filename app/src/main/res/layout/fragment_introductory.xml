@@ -37,10 +37,10 @@
                 android:id="@+id/tv_see_whats"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
                 android:text="@string/str_intro_text"
                 android:textColor="@color/black"
                 android:textSize="30sp"
-                android:layout_centerHorizontal="true"
                 android:textStyle="bold" />
 
             <Button
@@ -84,6 +84,5 @@
         </RelativeLayout>
 
     </RelativeLayout>
-
 </FrameLayout>
 </layout>
