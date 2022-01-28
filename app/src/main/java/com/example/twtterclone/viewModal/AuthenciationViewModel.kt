@@ -5,30 +5,30 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.twtterclone.model.data.User
-import com.example.twtterclone.model.repo.AuthenciationService
+import com.example.twtterclone.model.repo.AuthRepo
 import kotlinx.coroutines.launch
 
 class AuthenciationViewModel : ViewModel()
 {
     var user = MutableLiveData<User>()
-    var firebaseuser= AuthenciationService.userLiveData
+    var firebaseuser= AuthRepo.userLiveData
     fun sighnUp()
     {
         Log.i("user ",user.toString())
         viewModelScope.launch {
-            user.value?.let { AuthenciationService.sighnUpUser(it) }
+            user.value?.let { AuthRepo.sighnUpUser(it) }
         }
     }
 
     fun logOut() {
         viewModelScope.launch {
-            AuthenciationService.logOut()
+            AuthRepo.logOut()
         }
     }
 
     fun sighIn() {
         viewModelScope.launch {
-            user.value?.let { AuthenciationService.sighIn(it) }
+            user.value?.let { AuthRepo.sighIn(it) }
         }
     }
 }

@@ -10,7 +10,7 @@ import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.coroutines.tasks.await
 
-object AuthenciationService {
+object AuthRepo {
 
     private lateinit  var result : AuthResult
     val userLiveData: MutableLiveData<FirebaseUser>
@@ -52,6 +52,7 @@ object AuthenciationService {
     {
       firebaseAuth.signInWithEmailAndPassword(user.userName,user.password).await()
         userLiveData.postValue(firebaseAuth.currentUser)
+        loggedOutLiveData.postValue(false)
     }
 
     init {
