@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
 import com.example.twtterclone.R
 import com.example.twtterclone.databinding.FragmentLoginBinding
 import com.example.twtterclone.util.Extensions.toast
