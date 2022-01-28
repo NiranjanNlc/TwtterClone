@@ -4,9 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <variable
-            name="user"
-            type="com.example.twtterclone.model.data.User" />
-    </data>
+            name="userViewModal"
+            type="com.example.twtterclone.viewModal.AuthenciationViewModel" />
+    <variable
+        name="user"
+        type="com.example.twtterclone.model.data.User" />
+</data>
 <RelativeLayout
     android:layout_width="match_parent"
    

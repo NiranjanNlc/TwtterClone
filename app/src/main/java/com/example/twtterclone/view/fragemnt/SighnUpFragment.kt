@@ -1,5 +1,6 @@
 package com.example.twtterclone.view.fragemnt
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.twtterclone.R
 import com.example.twtterclone.databinding.SighnUpFragmentBinding
 import com.example.twtterclone.util.Extensions.toast
@@ -36,13 +39,20 @@ class SighnUpFragment : Fragment() {
             loadingDialog()
             if(checkAllFieldNonEmpty() && checkPasswordMatch())
             {
-               // modal.
+                modal.sighnUp()
             }
             else
             {
                 displayErrorMessage()
             }
         }
+        modal.firebaseuser.observe(this,{
+            if(it!=null) {
+                modal.logOut()
+                 findNavController().navigate(R.id.action_sighnUpFragment_to_loginFragment)
+                 toast(" Account created sucessfully ")
+            }
+        })
     }
 
     private fun displayErrorMessage() {

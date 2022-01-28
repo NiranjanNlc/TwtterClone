@@ -31,5 +31,9 @@
         android:id="@+id/sighnUpFragment"
         android:name="com.example.twtterclone.view.fragemnt.SighnUpFragment"
         android:label="SighnUpFragment"
-        tools:layout="@layout/sighn_up_fragment"/>
+        tools:layout="@layout/sighn_up_fragment">
+        <action
+            android:id="@+id/action_sighnUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>
