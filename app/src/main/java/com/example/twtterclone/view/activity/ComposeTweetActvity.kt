@@ -1,4 +1,4 @@
-package com.example.twtterclone.view
+package com.example.twtterclone.view.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,7 +9,6 @@ import com.example.twtterclone.R
 import com.example.twtterclone.databinding.ActivityComposeTweetActvityBinding
 import android.widget.Toast
 import com.example.twtterclone.util.RepoUtl
-import com.example.twtterclone.viewModal.TimeLineViewModal
 import com.example.twtterclone.viewModal.TweetViewModal
 import com.example.twtterclone.viewModal.ViewModalFactory
 

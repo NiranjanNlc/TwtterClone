@@ -1,4 +1,4 @@
-package com.example.twtterclone.view
+package com.example.twtterclone.view.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

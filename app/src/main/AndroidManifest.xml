@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TwtterClone">
         <activity
-            android:name=".view.Authenciation"
+            android:name=".view.activity.Authenciation"
             android:exported="true" />
         <activity
-            android:name=".view.SplashActivity"
+            android:name=".view.activity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,11 +21,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.ComposeTweetActvity"
+            android:name=".view.activity.ComposeTweetActvity"
             android:exported="true"
             android:theme="@style/NoActionBar" />
         <activity
-            android:name=".view.TimeLineActivity"
+            android:name=".view.activity.TimeLineActivity"
             android:exported="true"
             android:theme="@style/NoActionBar">
 

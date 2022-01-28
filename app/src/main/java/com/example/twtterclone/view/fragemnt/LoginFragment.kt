@@ -6,15 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import com.example.twtterclone.R
 import com.example.twtterclone.databinding.FragmentLoginBinding
 import com.example.twtterclone.util.Extensions.toast
-import com.example.twtterclone.view.TimeLineActivity
+import com.example.twtterclone.view.activity.TimeLineActivity
 import com.example.twtterclone.viewModal.AuthenciationViewModel
 
 class LoginFragment : Fragment() {
