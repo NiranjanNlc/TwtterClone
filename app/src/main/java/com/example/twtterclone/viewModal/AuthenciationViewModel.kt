@@ -25,4 +25,10 @@ class AuthenciationViewModel : ViewModel()
             AuthenciationService.logOut()
         }
     }
+
+    fun sighIn() {
+        viewModelScope.launch {
+            user.value?.let { AuthenciationService.sighIn(it) }
+        }
+    }
 }

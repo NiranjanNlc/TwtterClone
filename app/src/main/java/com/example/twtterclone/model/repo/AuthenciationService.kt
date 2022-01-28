@@ -47,6 +47,12 @@ object AuthenciationService {
             println(" Sghnng up excepto ${e.message}")
         }
     }
+
+    fun sighIn(user: User)
+    {
+
+    }
+
     init {
         userLiveData = MutableLiveData()
         loggedOutLiveData = MutableLiveData()
