@@ -48,9 +48,10 @@ object AuthenciationService {
         }
     }
 
-    fun sighIn(user: User)
+    suspend fun sighIn(user: User)
     {
-
+      firebaseAuth.signInWithEmailAndPassword(user.userName,user.password).await()
+        userLiveData.postValue(firebaseAuth.currentUser)
     }
 
     init {
