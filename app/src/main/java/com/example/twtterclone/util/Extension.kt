@@ -9,4 +9,5 @@ object Extensions {
     fun Fragment.toast(msg: String){
         Toast.makeText(activity, msg, Toast.LENGTH_SHORT).show()
     }
+
 }

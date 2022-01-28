@@ -3,6 +3,7 @@ package com.example.twtterclone.viewModal
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.twtterclone.model.repo.TweetRepo
+import com.google.android.gms.auth.api.Auth
 
 class ViewModalFactory(private val repository: TweetRepo) : 
     ViewModelProvider.Factory {
@@ -17,6 +18,11 @@ class ViewModalFactory(private val repository: TweetRepo) :
             println("Assighnabke class")
             @Suppress("UNCHECKED_CAST")
             return TweetViewModal(repository) as T
+        }
+        else if  (modelClass.isAssignableFrom(AuthenciationViewModel::class.java)) {
+            println("Assighnabke class")
+            @Suppress("UNCHECKED_CAST")
+            return AuthenciationViewModel() as T
         }
         throw IllegalArgumentException("Unknown ViewModel class")
     }
